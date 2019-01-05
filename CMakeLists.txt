@@ -6,8 +6,8 @@ find_package(catkin REQUIRED)
 include(ExternalProject)
 
 ExternalProject_Add(pybind11
-  URL "https://github.com/pybind/pybind11/archive/v2.2.3.zip"
-  URL_MD5 "6d9ae6508d0bb0595129dca09ec7738b"
+  URL "https://github.com/pybind/pybind11/archive/v2.2.4.zip"
+  URL_MD5 "06f0bbf25dc9c4fe15092e9e03a8fc01"
 
   UPDATE_COMMAND ""
   PATCH_COMMAND ""
@@ -28,18 +28,17 @@ ExternalProject_Add_Step(pybind11
 if(IS_DIRECTORY ${CMAKE_INSTALL_PREFIX})
   message(WARNING "Compiling for install workspace (${CMAKE_INSTALL_PREFIX})")
   catkin_package(
-    # INCLUDE_DIRS include/pybind11_catkin
+    INCLUDE_DIRS include
     LIBRARIES ${PYTHON_LIBRARIES}
-    CATKIN_DEPENDS
-    CFG_EXTRAS pybind.cmake
+    CFG_EXTRAS pybind11_catkin.cmake
   )
 else()
   message(WARNING "Compiling for devel workspace")
   file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME})
   catkin_package(
-    INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME} ${EIGEN3_INCLUDE_DIR}
+    INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include ${EIGEN3_INCLUDE_DIR}
     LIBRARIES ${PYTHON_LIBRARIES}
-    CFG_EXTRAS pybind.cmake
+    CFG_EXTRAS pybind11_catkin.cmake
   )
 endif()
 
