@@ -1,3 +1,26 @@
+## pybind11_catkin (melodic) - 2.2.4-2
+
+The packages in the `pybind11_catkin` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic pybind11_catkin` on `Mon, 14 Jan 2019 18:43:28 -0000`
+
+The `pybind11_catkin` package was released.
+
+Version of package(s) in repository `pybind11_catkin`:
+
+- upstream repository: https://github.com/ipab-slmc/pybind11_catkin.git
+- release repository: https://github.com/wxmerkt/pybind11_catkin-release.git
+- rosdistro version: `2.2.4-1`
+- old version: `2.2.4-1`
+- new version: `2.2.4-2`
+
+Versions of tools used:
+
+- bloom version: `0.7.0`
+- catkin_pkg version: `0.4.10`
+- rosdep version: `0.13.0`
+- rosdistro version: `0.7.1`
+- vcstools version: `0.1.40`
+
+
 ## pybind11_catkin (melodic) - 2.2.4-1
 
 The packages in the `pybind11_catkin` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic pybind11_catkin` on `Tue, 08 Jan 2019 22:37:42 -0000`
