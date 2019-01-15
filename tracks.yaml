@@ -64,7 +64,7 @@ tracks:
     last_version: 2.2.4
     name: upstream
     patches: null
-    release_inc: '5'
+    release_inc: '6'
     release_repo_url: git@github.com:wxmerkt/pybind11_catkin-release.git
     release_tag: :{version}
     ros_distro: melodic
