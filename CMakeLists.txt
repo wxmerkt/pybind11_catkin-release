@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0.2)
 project(pybind11_catkin)
 
 find_package(catkin REQUIRED)
 include(ExternalProject)
 
 ExternalProject_Add(pybind11_src
-  URL "https://github.com/pybind/pybind11/archive/v2.4.3.zip"
+  URL "https://github.com/pybind/pybind11/archive/v2.5.0.zip"
   UPDATE_COMMAND ""
   CMAKE_ARGS -DPYBIND11_PYTHON_VERSION=${PYTHON_VERSION_STRING}
              -DPYBIND11_TEST:BOOL=OFF -DPYBIND11_INSTALL:BOOL=ON
