@@ -1,3 +1,26 @@
+## pybind11_catkin (noetic) - 2.10.3-2
+
+The packages in the `pybind11_catkin` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic pybind11_catkin -y` on `Sun, 12 Feb 2023 17:50:46 -0000`
+
+The `pybind11_catkin` package was released.
+
+Version of package(s) in repository `pybind11_catkin`:
+
+- upstream repository: https://github.com/ipab-slmc/pybind11_catkin.git
+- release repository: https://github.com/wxmerkt/pybind11_catkin-release.git
+- rosdistro version: `2.10.3-1`
+- old version: `2.10.3-1`
+- new version: `2.10.3-2`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## pybind11_catkin (noetic) - 2.10.3-1
 
 The packages in the `pybind11_catkin` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic pybind11_catkin` on `Thu, 09 Feb 2023 18:58:45 -0000`
